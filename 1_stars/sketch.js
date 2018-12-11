@@ -19,11 +19,11 @@ class Start {
         let x = (this.x / this.z) * width
         let y = (this.y / this.z) * height
         let r = (this.r / this.z) * 100
-        ellipse(x, y, r, r)
         let px = (this.x / this.pz) * width
         let py = (this.y / this.pz) * height
         stroke(126)
         line(px, py, x, y)
+        ellipse(x, y, r, r)
     }
     update() {
         let speed = mouseX / windowWidth * 20
